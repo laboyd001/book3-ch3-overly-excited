@@ -1,15 +1,18 @@
-let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+// Create an addExcitement function that should console.log() rows of words. It should take an array containing the words of a sentence and output them in the developer console.
 
-function addExcitement (sentence) {
-  let buildMeUp = ""
+// let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
-  for ( let i = 0; i < sentence.length; i++) {
-    buildMeUp = buildMeUp + " " + sentence[i];
-    console.log(buildMeUp);
-  }
-}
+// function addExcitement (sentence) {
+//   let buildMeUp = ""
 
-addExcitement(sentence);
+//   for ( let i = 0; i < sentence.length; i++) {
+//     // buildMeUp = buildMeUp + " " + sentence[i];
+//     buildMeUp += `${sentence[i]} `
+//     console.log(buildMeUp);
+//   }
+// }
+
+// addExcitement(sentence);
 
 
 // Practice: Some words are more exciting than others-
@@ -27,14 +30,15 @@ let buildMeUp = "";
   
 
 //   for ( let i = 0; i < excitedSentence.length; i++) {
-//     buildMeUp = buildMeUp + " " + excitedSentence[i];
-//     console.log(buildMeUp);
+   
 //     if(i % 3 === 0 && i > 0) {
-//       buildMeUp += '!'
+//       buildMeUp += `${excitedSentence[i]} ! `;
 //     } else {
-//       buildMeUp
+//       buildMeUp += `${excitedSentence[i]} `;
+//       console.log(buildMeUp);
 //     }
 //   }
+ 
 // }
 
 // overlyExcited(excitedSentence);
@@ -54,18 +58,16 @@ let buildMeUp = "";
 
 //   for ( let i = 0; i < excitedSentence.length; i++) {
 //     if(i % 3 === 0 && i > 0) {
-//       buildMeUp = buildMeUp + " " + excitedSentence[i] + punctuation;
-//       console.log(buildMeUp);
+//       buildMeUp += ` ${excitedSentence[i]} ${punctuation} `;
+     
 //     } else {
-//       buildMeUp = buildMeUp + ' ' + excitedSentence[i]
+//       buildMeUp += ` ${excitedSentence[i]} `
 //       console.log(buildMeUp)
-    
-    
 //     } 
 //   }
 // }
 
-// addExcitement(excitedSentence, "?");
+// addExcitement(excitedSentence, " ? ");
 
 // Challenge: Arrow Function-----------------------------------------
 
@@ -76,10 +78,10 @@ let addExcitement2 = (excitedSentence, punctuation) => {
 
   for ( let i = 0; i < excitedSentence.length; i++) {
     if(i % 3 === 0 && i > 0) {
-      buildMeUp = buildMeUp + " " + excitedSentence[i] + punctuation;
+      buildMeUp += ` ${excitedSentence[i]}${punctuation}`;
       console.log(buildMeUp);
     } else {
-      buildMeUp = buildMeUp + ' ' + excitedSentence[i]
+      buildMeUp += ` ${excitedSentence[i]}`;
       console.log(buildMeUp)
     
     
